@@ -1,0 +1,58 @@
+@startuml
+' ================================================================
+' U3 - Diagrama de Casos de Uso - Imobiliária Boa Moradia
+' Aluno: Thomas Rangel Bugs
+' ================================================================
+' Cada bloco abaixo possui comentário explicando sua finalidade.
+
+left to right direction
+skinparam packageStyle rectangle
+skinparam shadowing false
+skinparam actorStyle awesome
+
+' ATOR CLIENTE:
+' Pessoa que consulta imóveis e agenda visitas pelo aplicativo.
+actor Cliente
+
+' ATOR VENDEDOR:
+' Profissional da imobiliária que mantém os imóveis e acompanha visitas.
+actor Vendedor
+
+' LIMITE DO SISTEMA:
+' Delimita quais funcionalidades pertencem ao Aplicativo Boa Moradia.
+rectangle "Aplicativo Boa Moradia" {
+
+  ' Permite ao cliente pesquisar/consultar os imóveis representados.
+  usecase UC01 as "Consultar imóveis"
+
+  ' Exibe informações do imóvel selecionado, como características e dados disponíveis.
+  usecase UC02 as "Visualizar detalhes\ndo imóvel"
+
+  ' Registra uma solicitação de data/horário para visita ao imóvel escolhido.
+  usecase UC03 as "Agendar visita"
+
+  ' Permite ao cliente consultar as visitas que já solicitou/agendou.
+  usecase UC04 as "Consultar meus\nagendamentos"
+
+  ' Permite ao vendedor cadastrar e atualizar os imóveis ofertados no aplicativo.
+  usecase UC05 as "Manter cadastro\nde imóveis"
+
+  ' Permite ao vendedor visualizar as visitas marcadas pelos clientes.
+  usecase UC06 as "Consultar agenda\nde visitas"
+
+  ' Permite ao vendedor confirmar a visita ou atualizar seu status.
+  usecase UC07 as "Confirmar / atualizar\nstatus da visita"
+}
+
+' ASSOCIAÇÕES DO CLIENTE:
+Cliente -- UC01
+Cliente -- UC02
+Cliente -- UC03
+Cliente -- UC04
+
+' ASSOCIAÇÕES DO VENDEDOR:
+Vendedor -- UC05
+Vendedor -- UC06
+Vendedor -- UC07
+
+@enduml

@@ -1,0 +1,44 @@
+U3 — TAREFA — DIAGRAMA DE CASOS DE USO — BOA MORADIA
+Aluno: Thomas Rangel Bugs
+
+CONTEÚDO DESTE PACOTE
+1) Thomas_Rangel_Bugs_U3_Boa_Moradia.asta  ★ ARQUIVO DA ENTREGA
+   - projeto nativo do Astah com o diagrama de casos de uso.
+
+2) Thomas_Rangel_Bugs_U3_Boa_Moradia.png
+   - imagem final do diagrama, pronta para conferência.
+
+3) Thomas_Rangel_Bugs_U3_Boa_Moradia.svg
+   - versão vetorial do mesmo diagrama.
+
+4) Thomas_Rangel_Bugs_U3_Boa_Moradia.puml
+   - fonte PlantUML comentada linha a linha.
+
+5) DOCUMENTACAO_CASOS_DE_USO.md
+   - descrição objetiva de cada caso de uso/função.
+
+6) BoaMoradiaService.java
+   - exemplo didático em Java com cada função comentada.
+
+7) GerarProjetoAstah.java
+   - gerador usado para produzir o .asta via API oficial do Astah.
+
+COMO ABRIR NO ASTAH
+- File → Open → Thomas_Rangel_Bugs_U3_Boa_Moradia.asta
+- Confira o diagrama "U3 - Boa Moradia - Casos de Uso"
+
+ATORES EXIGIDOS
+- Cliente
+- Vendedor
+
+CASOS DE USO
+CLIENTE:
+- Consultar imóveis
+- Visualizar detalhes do imóvel
+- Agendar visita
+- Consultar meus agendamentos
+
+VENDEDOR:
+- Manter cadastro de imóveis
+- Consultar agenda de visitas
+- Confirmar / atualizar status da visita
